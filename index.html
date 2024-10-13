@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Typescript</title>
+    <link href = "global.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+    
+    <!-- <script src="dist/src/app.js" type="module"></script> -->
+
+    <h1>Calculadora de Tangente y Ángulo</h1>
+    <form id="anguloForm">
+        <label for="D">Diámetro mayor (D):</label>
+        <input type="number" id="D" required><br><br>
+
+        <label for="d">Diámetro menor (d):</label>
+        <input type="number" id="d" required><br><br>
+
+        <label for="longitud">Longitud:</label>
+        <input type="number" id="longitud" required><br><br>
+
+        <button type="submit">Calcular</button><br><br>
+
+        <!-- Resultado de la tangente de alfa -->
+        <label for="tangenteAlfa">Tangente de alfa:</label>
+        <input type="text" id="tangenteAlfa" readonly><br><br>
+
+        <!-- Resultado del ángulo (tangente inversa) -->
+        <label for="angulo">Ángulo en grados (Tangente inversa):</label>
+        <input type="text" id="angulo" readonly>
+    </form>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    
+    <script src="bundle.js"></script>
+
+</body>
+</html>
