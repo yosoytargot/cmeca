@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Typescript</title>
+    <link href="global.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <div id="resultado-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="resultado-modal-text"></p>
+        </div>
+    </div>
+
+    <div id="trivial-game">
+        <h1>Juego Trivial</h1>
+        <form id="respuesta-form">
+            <div id="numero-pregunta"></div>
+            <table>
+                <tr>
+                    <td id="pregunta" class="pregunta" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="radio" name="opcion" value="a"> <span id="opcion-a"></span></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="radio" name="opcion" value="b"> <span id="opcion-b"></span></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="radio" name="opcion" value="c"> <span id="opcion-c"></span></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="radio" name="opcion" value="d"> <span id="opcion-d"></span></label>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="enviar-respuesta">Enviar</button>
+        </form>
+        <div id="resultado" class="resultado" style="display: none;"></div> <!-- Resultados aquí -->
+        <button id="jugar-otra-vez" style="display: none;">Jugar otra vez</button> <!-- Botón para reiniciar -->
+    </div>
+
+    <script src="bundle.js"></script>
+
+</body>
+</html>
